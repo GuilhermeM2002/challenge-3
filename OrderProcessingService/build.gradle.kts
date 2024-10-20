@@ -17,6 +17,7 @@ java {
 
 repositories {
 	mavenCentral()
+	maven("https://packages.confluent.io/maven/")
 }
 
 dependencies {
@@ -26,6 +27,16 @@ dependencies {
 	implementation("org.jetbrains.kotlin:kotlin-reflect")
 	implementation("org.flywaydb:flyway-core")
 	implementation("org.flywaydb:flyway-mysql")
+	// https://mvnrepository.com/artifact/org.modelmapper/modelmapper
+	implementation("org.modelmapper:modelmapper:2.1.1")
+	// https://mvnrepository.com/artifact/io.confluent/kafka-avro-serializer
+	implementation("io.confluent:kafka-avro-serializer:7.6.0")
+	// https://mvnrepository.com/artifact/org.apache.avro/avro
+	implementation("org.apache.avro:avro:1.11.3")
+	// https://mvnrepository.com/artifact/io.confluent/kafka-schema-registry-client
+	implementation("io.confluent:kafka-schema-registry-client:7.6.0")
+	// https://mvnrepository.com/artifact/org.springframework.kafka/spring-kafka
+	implementation("org.springframework.kafka:spring-kafka:3.2.0")
 	developmentOnly("org.springframework.boot:spring-boot-devtools")
 	runtimeOnly("com.mysql:mysql-connector-j")
 	testImplementation("org.springframework.boot:spring-boot-starter-test")
