@@ -1,9 +1,0 @@
-CREATE TABLE IF NOT EXISTS t_order (
-    id BIGINT NOT NULL AUTO_INCREMENT,
-    products VARCHAR(255) NOT NULL,
-    email VARCHAR(255) NOT NULL,
-    address VARCHAR(255),
-    price DOUBLE,
-    date_order TIMESTAMP NOT NULL,
-    PRIMARY KEY (id)
-);
